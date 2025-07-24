@@ -5,6 +5,7 @@ import { Header } from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
 import { Analytics } from "@vercel/analytics/next"
+import { icons } from 'lucide-react'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -20,6 +21,10 @@ export const metadata: any = {
   title: {
     default: 'Wali',
   },};
+
+  icon : {
+    icons: '/favicon.ico'
+  }
 
 const geist = Geist({
   variable: '--font-geist',
