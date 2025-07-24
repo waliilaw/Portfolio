@@ -91,6 +91,14 @@ export const DESIGNS: Design[] = [
     id: 'design2',
     tag: 'Figma'
   },
+  {
+    name: 'Zero Two',
+    description: 'Elevate your space with our premium collection of anime-inspired stickers, posters, bookmarks, and coasters. Each piece is crafted with pixel-perfect precision.',
+    link: 'https://waliilaw.me',
+    video: '/Zerotwo.mp4',
+    id: 'design5',
+    tag: 'Motion' 
+  },
 
   {
     name: 'Click',
