@@ -76,12 +76,12 @@ export const PROJECTS: Project[] = [
 
 export const DESIGNS: Design[] = [
   {
-    name: 'Click',
-    description: 'revamed the ui with more minimalist design of Pika.style along with the ux',
-    link: 'https://design1.example.com',
-    video: '/click.mp4',
-    id: 'design1',
-    tag: 'Framer'
+    name: 'Zone',
+    description: 'Secure your code ownership on the Solana blockchain. Protect intellectual property, monetize repositories, and build a verifiable portfolio of your work.',
+    link: 'https://waliilaw.me',
+    video: '/Zone.mp4',
+    id: 'design3',
+    tag: 'Motion' 
   },
   {
     name: 'Perplexity',
@@ -91,6 +91,16 @@ export const DESIGNS: Design[] = [
     id: 'design2',
     tag: 'Figma'
   },
+  
+  {
+    name: 'Click',
+    description: 'revamed the ui with more minimalist design of Pika.style along with the ux',
+    link: 'https://design1.example.com',
+    video: '/click.mp4',
+    id: 'design1',
+    tag: 'Framer'
+  },
+ 
   // {
   //   name: 'Unreal UI',
   //   description: '',
@@ -99,14 +109,7 @@ export const DESIGNS: Design[] = [
   //   id: 'design3',
   //   tag: 'Figma' 
   // },
-  {
-    name: 'Zone',
-    description: 'Secure your code ownership on the Solana blockchain. Protect intellectual property, monetize repositories, and build a verifiable portfolio of your work.',
-    link: 'https://waliilaw.me',
-    video: '/Zone.mp4',
-    id: 'design3',
-    tag: 'Motion' 
-  },
+
   // {
   //   name: 'Motion Dashboard',
   //   description: 'Interactive dashboard with fluid transitions and micro-interactions',
