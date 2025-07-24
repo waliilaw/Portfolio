@@ -91,7 +91,7 @@ export const DESIGNS: Design[] = [
     id: 'design2',
     tag: 'Figma'
   },
-  
+
   {
     name: 'Click',
     description: 'revamed the ui with more minimalist design of Pika.style along with the ux',
@@ -101,14 +101,14 @@ export const DESIGNS: Design[] = [
     tag: 'Framer'
   },
  
-  // {
-  //   name: 'Unreal UI',
-  //   description: '',
-  //   link: 'https://waliilaw.me',
-  //   video: '/',
-  //   id: 'design3',
-  //   tag: 'Figma' 
-  // },
+  {
+    name: 'Unreal UI',
+    description: '',
+    link: 'https://waliilaw.me',
+    video: '/UnrealUI.mp4',
+    id: 'design4',
+    tag: 'Figma' 
+  },
 
   // {
   //   name: 'Motion Dashboard',
