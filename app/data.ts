@@ -76,7 +76,7 @@ export const PROJECTS: Project[] = [
     name: 'Unreal UI',
     github:'https://github.com/waliilaw/Unreal-UI-',
     description: 'Fast, Flexible, and Fully Customizable UI Components.',
-    link: 'https://unrealui.waliilaw.me',
+    link: 'https://waliilaw.me',
     video: '/UnrealUI.mp4',
     id: 'project4',
     tag: 'Building' 
