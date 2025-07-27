@@ -196,6 +196,11 @@ export default function Personal() {
               y: 0,
               opacity: 1
             }}
+            whileHover={{ 
+              scale: 1.02,
+              filter: "blur(0.3px)",
+              transition: { duration: 0.2 }
+            }}
             transition={{ 
               duration: 0.7,
               backgroundSize: {
@@ -212,14 +217,23 @@ export default function Personal() {
                 duration: 0.2
               }
             }}
-            className='ml-1 dark:text-black relative inline-block'
+            className='ml-1 dark:text-black relative inline-block cursor-pointer'
             style={{
               background: "linear-gradient(to right, #bbf7d0 0%, #bbf7d0 100%)",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "left"
             }}
            >
-            Open to work
+            <motion.span
+              initial={{ display: "inline-block" }}
+              animate={{ rotate: 0 }}
+              whileHover={{ 
+                rotate: [0, -10, 10, -10, 10, 0],
+                transition: { duration: 0.5 }
+              }}
+            >
+              Open to work
+            </motion.span>
            </motion.span>
           </p>
         </div>
@@ -262,12 +276,27 @@ export default function Personal() {
        pointerClassName="text-blue-500 h-3 w-3"
        containerClassName="inline-block mx-1"
       >
-        <span
-          className='relative z-10 text-zinc-800 dark:text-zinc-100 cursor-pointer'
+        <motion.span
+          initial={{ opacity: 1 }}
+          whileHover={{ 
+            scale: 1.02,
+            filter: "blur(0.3px)",
+            transition: { duration: 0.2 }
+          }}
+          className='relative z-10 text-zinc-800 dark:text-zinc-100 cursor-pointer inline-block'
           onClick={() => { window.open('https://cal.com/waliilaw', '_blank', 'noopener,noreferrer') }}
         >
-          Book a Meet
-        </span>
+          <motion.span
+            initial={{ display: "inline-block" }}
+            animate={{ rotate: 0 }}
+            whileHover={{ 
+              rotate: [0, -10, 10, -10, 10, 0],
+              transition: { duration: 0.5 }
+            }}
+          >
+            Book a Meet
+          </motion.span>
+        </motion.span>
       </PointerHighlight>
 </div>
 
