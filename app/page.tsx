@@ -199,11 +199,6 @@ export default function Personal() {
               filter: "blur(0.3px)",
               transition: { duration: 0.2 }
             }}
-            whileTap={{ 
-              scale: 1.02,
-              filter: "blur(0.3px)",
-              transition: { duration: 0.2 }
-            }}
             transition={{ 
               duration: 0.7,
               backgroundSize: {
@@ -226,10 +221,6 @@ export default function Personal() {
               initial={{ display: "inline-block" }}
               animate={{ rotate: 0 }}
               whileHover={{ 
-                rotate: [0, -10, 10, -10, 10, 0],
-                transition: { duration: 0.5 }
-              }}
-              whileTap={{ 
                 rotate: [0, -10, 10, -10, 10, 0],
                 transition: { duration: 0.5 }
               }}
@@ -268,10 +259,6 @@ export default function Personal() {
             rotate: [0, -10, 10, -10, 10, 0],
             transition: { duration: 0.5 }
           }}
-          whileTap={{ 
-            rotate: [0, -10, 10, -10, 10, 0],
-            transition: { duration: 0.5 }
-          }}
         >
           Resume 📄
         </motion.span>
@@ -289,11 +276,6 @@ export default function Personal() {
             filter: "blur(0.3px)",
             transition: { duration: 0.2 }
           }}
-          whileTap={{ 
-            scale: 1.02,
-            filter: "blur(0.3px)",
-            transition: { duration: 0.2 }
-          }}
           className='relative z-10 text-zinc-800 dark:text-zinc-100 cursor-pointer inline-block'
           onClick={() => { window.open('https://cal.com/waliilaw', '_blank', 'noopener,noreferrer') }}
         >
@@ -301,10 +283,6 @@ export default function Personal() {
             initial={{ display: "inline-block" }}
             animate={{ rotate: 0 }}
             whileHover={{ 
-              rotate: [0, -10, 10, -10, 10, 0],
-              transition: { duration: 0.5 }
-            }}
-            whileTap={{ 
               rotate: [0, -10, 10, -10, 10, 0],
               transition: { duration: 0.5 }
             }}
