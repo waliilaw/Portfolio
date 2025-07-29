@@ -175,8 +175,18 @@ export default function Personal() {
     <motion.main
       className="space-y-24"
       variants={VARIANTS_CONTAINER}
-      initial="hidden"
-      animate="visible"
+      initial={{ 
+        opacity: 0,
+        filter: "blur(10px)"
+      }}
+      animate={{ 
+        opacity: 1,
+        filter: "blur(0px)"
+      }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut"
+      }}
     >
       <motion.section
         variants={VARIANTS_SECTION}
