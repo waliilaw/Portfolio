@@ -159,18 +159,10 @@
 
 @layer components {
   .video-container-green {
-    @apply relative;
-  }
-  .video-container-green::before {
-    content: '';
-    @apply absolute -inset-0.5 rounded-2xl bg-green-500/10 blur-sm -z-10;
+    @apply ring-[3px] ring-green-500;
   }
   
   .video-container-blue {
-    @apply relative;
-  }
-  .video-container-blue::before {
-    content: '';
-    @apply absolute -inset-0.5 rounded-2xl bg-blue-500/10 blur-sm -z-10;
+    @apply ring-[3px] ring-blue-500;
   }
 }
