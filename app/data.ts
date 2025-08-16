@@ -56,6 +56,17 @@ export const PROJECTS: Project[] = [
     tag: '$5000 Grant Recipient'
   },
   {
+    name: 'Oktopus',
+    github:'https://github.com/waliilaw/oktopus' , 
+    description:
+      'Web3 SDK for building web3 apps',
+    link: 'https://oktopus.waliilaw.me',
+    video:
+      '/oktopus.mp4',
+    id: 'project5',
+    tag: 'Building'
+  },
+  {
     name: 'ArBet',
     github:'https://github.com/waliilaw/ArBet' , 
     description: 'Interactive 2D game with ingame web3 contracts with lua',

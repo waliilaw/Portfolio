@@ -355,7 +355,11 @@ export default function Personal() {
                   transition={{ duration: 0.3 }}
                   className="space-y-2"
                 >
-                  <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
+                  <div className={cn(
+                    "relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50",
+                    project.tag && project.tag === '$5000 Grant Recipient' && 'video-container-green',
+                    project.tag && project.tag === 'Building' && 'video-container-blue'
+                  )}>
                     <ProjectVideo src={project.video} />
                   </div>
                   <div className="px-1">
@@ -369,7 +373,11 @@ export default function Personal() {
                         <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
                       </a>
                       {project.tag && (
-                        <span className="inline-flex items-center rounded-full bg-green-50 dark:bg-green-900/30 px-2 py-1 text-xs font-medium text-green-700 dark:text-green-300 ring-1 ring-inset ring-green-600/20 dark:ring-green-500/30 hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white cursor-pointer">
+                        <span className={cn(
+                          "inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset cursor-pointer",
+                          project.tag === '$5000 Grant Recipient' && "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-green-600/20 dark:ring-green-500/30",
+                          project.tag === 'Building' && "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 ring-blue-600/20 dark:ring-blue-500/30"
+                        )}>
                           {project.tag}
                         </span>
                       )}
