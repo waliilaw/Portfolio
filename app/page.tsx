@@ -210,23 +210,10 @@ export default function Personal() {
                 duration: 0.2
               }
             }}
-            className='ml-1 dark:text-black relative inline-block cursor-pointer'
-            style={{
-              background: "linear-gradient(to right, #bbf7d0 0%, #bbf7d0 100%)",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "left"
-            }}
+            className='ml-1 dark:text-black relative inline-block cursor-pointer bg-[#bbf7d0]'
            >
-            <motion.span
-              initial={{ display: "inline-block" }}
-              animate={{ rotate: 0 }}
-              whileHover={{ 
-                rotate: [0, -10, 10, -10, 10, 0],
-                transition: { duration: 0.5 }
-              }}
-            >
-              Open to work
-            </motion.span>
+          Open to work
+
            </motion.span>
           </p>
         </div>
@@ -252,17 +239,9 @@ export default function Personal() {
           document.body.removeChild(link);
         }}
       >
-        <motion.span
-          initial={{ display: "inline-block" }}
-          animate={{ rotate: 0 }}
-          whileHover={{ 
-            rotate: [0, -10, 10, -10, 10, 0],
-            transition: { duration: 0.5 }
-          }}
-        >
+       
           Resume 📄
-        </motion.span>
-      </motion.button>
+</motion.button>
 
       <PointerHighlight
        rectangleClassName="bg-blue-100 dark:bg-blue-900 border-blue-300 dark:border-blue-700 leading-loose"
@@ -279,17 +258,9 @@ export default function Personal() {
           className='relative z-10 text-zinc-800 dark:text-zinc-100 cursor-pointer inline-block'
           onClick={() => { window.open('https://cal.com/waliilaw', '_blank', 'noopener,noreferrer') }}
         >
-          <motion.span
-            initial={{ display: "inline-block" }}
-            animate={{ rotate: 0 }}
-            whileHover={{ 
-              rotate: [0, -10, 10, -10, 10, 0],
-              transition: { duration: 0.5 }
-            }}
-          >
+      
             Book a Meet
-          </motion.span>
-        </motion.span>
+  </motion.span>
       </PointerHighlight>
 </div>
 
