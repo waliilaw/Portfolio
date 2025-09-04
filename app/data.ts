@@ -65,6 +65,17 @@ export const PROJECTS: Project[] = [
       '/oktopus.mp4',
     id: 'project5',
     tag: 'Building'
+  }, 
+   {
+    name: 'RustyWorks',
+    github:'https://github.com/Rusty-Works/Rusty-Works' , 
+    description:
+      'Showcasing complex rust backend architechture with live demos',
+    link: 'https://rustyworks.waliilaw.me',
+    video:
+      '/rustyworks.mp4',
+    id: 'project5',
+    tag: 'Proof of Work'
   },
   {
     name: 'ArBet',
