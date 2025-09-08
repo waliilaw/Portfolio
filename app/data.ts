@@ -7,9 +7,11 @@ type Project = {
   github : string
   description: string
   link: string
-  video: string
+  video?: string
   id: string
   tag?: string
+  type?: 'video' | 'image'
+  image?: string
 }
 
 type Design = {
@@ -54,6 +56,18 @@ export const PROJECTS: Project[] = [
       '/flux.mp4',
     id: 'project1',
     tag: '$5000 Grant Recipient'
+  },
+    {
+    name: 'Revealing Soon',
+    github:'https://github.com/waliilaw' , 
+    description:
+      '',
+    link: 'https://waliilaw.me',
+    image :
+      '/k.png',
+    id: 'project1',
+    tag: '$3000 Grant Recipient',
+    type : 'image'
   },
   {
     name: 'Oktopus',

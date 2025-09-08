@@ -52,7 +52,7 @@ type ProjectVideoProps = {
   src: string
 }
 
-function ProjectVideo({ src }: ProjectVideoProps) {
+function ProjectVideo({ src }: any) {
   const [isLoading, setIsLoading] = useState(true)
   const [isVideoReady, setIsVideoReady] = useState(false)
   
@@ -132,6 +132,82 @@ function ProjectVideo({ src }: ProjectVideoProps) {
     </MorphingDialog>
   )
 }
+
+function ProjectImage({ src }: any) {
+  const [isLoading, setIsLoading] = useState(true)
+  const [isVideoReady, setIsVideoReady] = useState(false)
+  
+  useEffect(() => {
+
+    const minLoadingTimeout = setTimeout(() => {
+      if (isVideoReady) {
+        setIsLoading(false)
+      }
+    }, 1000)
+
+    return () => clearTimeout(minLoadingTimeout)
+  }, [isVideoReady])
+
+  return (
+    <MorphingDialog
+      transition={{
+        type: 'spring',
+        bounce: 0,
+        duration: 0.3,
+      }}
+    >
+      <MorphingDialogTrigger>
+        <div className="relative aspect-video w-full">
+          <AnimatePresence mode="wait">
+            {isLoading && (
+              <motion.div
+                initial={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.4 }}
+                className="absolute inset-0 z-10"
+              >
+                <Skeleton className="h-full w-full" />
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isLoading ? 0 : 1 }}
+            transition={{ duration: 0.4 }}
+          >
+            <img
+            src={src}
+            className="aspect-video w-full cursor-zoom-in rounded-xl"
+            onLoadedData={() => setIsVideoReady(true)}
+            />
+          </motion.div>
+        </div>
+      </MorphingDialogTrigger>
+      <MorphingDialogContainer>
+        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+          <img
+            src={src}
+            className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+          />
+        </MorphingDialogContent>
+        <MorphingDialogClose
+          className="fixed top-6 right-6 h-fit w-fit rounded-full bg-white p-1"
+          variants={{
+            initial: { opacity: 0 },
+            animate: {
+              opacity: 1,
+              transition: { delay: 0.3, duration: 0.1 },
+            },
+            exit: { opacity: 0, transition: { duration: 0 } },
+          }}
+        >
+          <XIcon className="h-5 w-5 text-zinc-500" />
+        </MorphingDialogClose>
+      </MorphingDialogContainer>
+    </MorphingDialog>
+  )
+}
+
 
 function MagneticSocialLink({
   children,
@@ -329,10 +405,16 @@ export default function Personal() {
                   <div className={cn(
                     "relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50",
                     project.tag && project.tag === '$5000 Grant Recipient' && 'video-container-green',
+                    project.tag && project.tag === '$3000 Grant Recipient' && 'video-container-green',
                     project.tag && project.tag === 'Building' && 'video-container-blue'
                   )}>
-                    <ProjectVideo src={project.video} />
-                  </div>
+{project.type === 'image' ? (
+  <ProjectImage src={project.image} />
+) : (
+  <ProjectVideo src={project.video} />
+)}
+
+                    </div>
                   <div className="px-1">
                     <div className="flex items-center gap-3 mb-1">
                       <a
@@ -347,6 +429,7 @@ export default function Personal() {
                         <span className={cn(
                           "inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset cursor-pointer",
                           project.tag === '$5000 Grant Recipient' && "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-green-600/20 dark:ring-green-500/30",
+                           project.tag === '$3000 Grant Recipient' && "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-green-600/20 dark:ring-green-500/30",
                           project.tag === 'Building' && "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 ring-blue-600/20 dark:ring-blue-500/30"
                         )}>
                           {project.tag}

@@ -165,4 +165,5 @@
   .video-container-blue {
     @apply ring-[3px] ring-blue-500;
   }
+  
 }
