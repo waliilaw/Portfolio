@@ -135,18 +135,6 @@ function ProjectVideo({ src }: any) {
 
 function ProjectImage({ src }: any) {
   const [isLoading, setIsLoading] = useState(true)
-  const [isVideoReady, setIsVideoReady] = useState(false)
-  
-  useEffect(() => {
-
-    const minLoadingTimeout = setTimeout(() => {
-      if (isVideoReady) {
-        setIsLoading(false)
-      }
-    }, 1000)
-
-    return () => clearTimeout(minLoadingTimeout)
-  }, [isVideoReady])
 
   return (
     <MorphingDialog
@@ -166,8 +154,9 @@ function ProjectImage({ src }: any) {
           >
             <img
             src={src}
-            className="aspect-video w-full cursor-zoom-in rounded-xl"
-            onLoadedData={() => setIsVideoReady(true)}
+            onLoad={() => setIsLoading(false)}
+           className="aspect-video w-full rounded-xl object-contain bg-black"
+
             />
           </motion.div>
         </div>
@@ -176,7 +165,8 @@ function ProjectImage({ src }: any) {
         <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
           <img
             src={src}
-            className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+            onLoad={() => setIsLoading(false)}
+           className="aspect-video w-full rounded-xl object-contain bg-black"
           />
         </MorphingDialogContent>
         <MorphingDialogClose
