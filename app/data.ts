@@ -57,18 +57,18 @@ export const PROJECTS: Project[] = [
     id: 'project1',
     tag: '$5000 Grant Recipient'
   },
-  //   {
-  //   name: 'Revealing Soon',
-  //   github:'https://github.com/waliilaw' , 
-  //   description:
-  //     '',
-  //   link: 'https://waliilaw.me',
-  //   image :
-  //     '/k.png',
-  //   id: 'project1',
-  //   tag: '$3000 Grant Recipient',
-  //   type : 'image'
-  // },
+    {
+    name: 'Revealing Soon',
+    github:'https://github.com/waliilaw' , 
+    description:
+      '',
+    link: 'https://waliilaw.me',
+    image :
+      '/k.png',
+    id: 'project1',
+    tag: '$3000 Grant Recipient',
+    type : 'image'
+  },
   {
     name: 'Oktopus',
     github:'https://github.com/waliilaw/oktopus' , 
