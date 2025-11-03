@@ -45,6 +45,18 @@ type SocialLink = {
   link: string
 }
 
+type OpenSourceContrib = {
+  repository: string
+  description: string
+  githubLink: string
+  pullRequests: {
+    title: string
+    link: string
+  }[]
+  id: string
+  tag?: string
+}
+
 export const PROJECTS: Project[] = [
   {
     name: 'FLux AO',
@@ -73,7 +85,7 @@ export const PROJECTS: Project[] = [
     name: 'Lumina',
     github:'https://github.com/waliilaw/Lumina-Live' , 
     description:
-      'Proof-of-Progress Solana ⟡',
+      'Proof-of-Progress Solana',
     link: 'https://lumina.waliilaw.me',
     video :
       '/lumina.mp4',
@@ -252,3 +264,20 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ]
 
 export const EMAIL = 'humaidwali20@gmail.com'
+
+export const OPEN_SOURCE_CONTRIBUTIONS: OpenSourceContrib[] = [
+  {
+    repository: 'Example Repo',
+    description: 'Description of your contribution to this repository',
+    githubLink: 'https://github.com/organization/repo',
+    pullRequests: [
+      {
+        title: 'Fix bug',
+        link: 'https://github.com/organization/repo/pull/124',
+      },
+    ],
+    id: 'contrib1',
+    tag: 'Maintainer',
+  },
+  // Add more contributions here
+]

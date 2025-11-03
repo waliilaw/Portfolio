@@ -30,7 +30,7 @@ export function Header() {
             className="text-black  dark:text-white font-medium "
             delay={0.1}
           >
-            Wali
+            Wali ⟡
           </TextEffect>
           <TextEffect
             as="p"
