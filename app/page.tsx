@@ -579,21 +579,7 @@ export default function Personal() {
         </div>
       </motion.section>
 
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-        className="!-mt-16"
-      >
-        <div className="flex items-center justify-start space-x-3">
-          {SOCIAL_LINKS.map((link) => (
-            <MagneticSocialLink key={link.label} link={link.link}>
-              {link.label}
-            </MagneticSocialLink>
-          ))}
-        </div>
-      </motion.section>
-
-      <div className='absolute -translate-y-20 flex items-center gap-4'>
+      <div className='flex items-center gap-4 -mt-16'>
       <motion.button
         initial={{ opacity: 0.8 }}
         whileHover={{ 
@@ -642,7 +628,21 @@ export default function Personal() {
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
-        className="!mt-12"
+        className="-mt-18"
+      >
+        <div className="flex items-center justify-start space-x-3">
+          {SOCIAL_LINKS.map((link) => (
+            <MagneticSocialLink key={link.label} link={link.link}>
+              {link.label}
+            </MagneticSocialLink>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="-mt-12"
       >
         <div className="flex justify-center gap-8 mb-8">
           <button
