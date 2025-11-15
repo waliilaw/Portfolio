@@ -81,6 +81,18 @@ export const PROJECTS: Project[] = [
     tag: '$3000 Grant Recipient',
     type : 'image'
   },
+    {
+    name: 'Re:mail',
+    github:'https://github.com/waliilaw/Re-mail' , 
+    description:
+      'Tempo mail',
+    link: 'https://waliilaw.me/',
+    image :
+      '/remail.png',
+    id: 'project7',
+    tag: 'Building',
+    type : 'image'
+  },
   {
     name: 'Lumina',
     github:'https://github.com/waliilaw/Lumina-Live' , 
