@@ -202,8 +202,6 @@ export const DESIGNS: Design[] = [
     tag: 'Framer'
   },
  
-
-
   // {
   //   name: 'Motion Dashboard',
   //   description: 'Interactive dashboard with fluid transitions and micro-interactions',
