@@ -1,22 +1,18 @@
-portfolio template guide
-
-hello there! welcome to my portfolio template. this guide will help you customize this portfolio for your own use. let's make it super easy to understand!
+hello there! welcome to my portfolio template
 
 what you'll get:
-• clean and modern design
-• smooth scrolling experience
-• responsive layout
-• video showcase capabilities
-• easy to customize sections
+a good portfolio (hopefully)
 
 getting started:
 
 1. clone and setup
 ```bash
-git clone [your-repo-url]
+git clone git@github.com:waliilaw/Portfolio.git
 cd portfolio
 npm install
 ```
+
+**Important** 
 
 2. customize your info
 open `app/data.ts` and update these things:
@@ -55,10 +51,7 @@ tips:
 • make sure all links work
 
 need help?
-if you run into problems:
-• check the nextjs docs
-• look at the original repo
-• try the nextjs community
+just messege me on twitter @waliilaww or insta @waliilaw
 
 happy customizing! hope this template helps showcase your awesome work 😊
 

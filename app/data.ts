@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
     tag: '$5000 Grant Recipient'
   },
     {
-    name: 'Revealing Soon',
+    name: '********',
     github:'https://github.com/waliilaw' , 
     description:
       '',
@@ -81,18 +81,30 @@ export const PROJECTS: Project[] = [
     tag: '$3000 Grant Recipient',
     type : 'image'
   },
-    {
-    name: 'Re:mail',
-    github:'https://github.com/waliilaw/Re-mail' , 
+  {
+    name: '******** *******',
+    github:'https://github.com/waliilaw' , 
     description:
-      'disposable email addresses on decentra network',
-    link: 'https://waliilaw.me/',
+      '',
+    link: 'https://waliilaw.me',
     image :
-      '/remail.png',
+      '/c.png',
     id: 'project7',
-    tag: 'Building',
+    tag: '$4000 Grant Recipient',
     type : 'image'
   },
+  //   {
+  //   name: 'Re:mail',
+  //   github:'https://github.com/waliilaw/Re-mail' , 
+  //   description:
+  //     'disposable email addresses on decentra network',
+  //   link: 'https://waliilaw.me/',
+  //   image :
+  //     '/remail.png',
+  //   id: 'project7',
+  //   tag: 'Building',
+  //   type : 'image'
+  // },
   {
     name: 'Lumina',
     github:'https://github.com/waliilaw/Lumina-Live' , 
