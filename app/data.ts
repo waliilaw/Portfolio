@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
     tag: '$5000 Grant Recipient'
   },
     {
-    name: '********',
+    name: 'K-V0',
     github:'https://github.com/waliilaw' , 
     description:
       'Launching in Jan2026',
@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
     type : 'image'
   },
   {
-    name: '******** *******',
+    name: 'C-V0',
     github:'https://github.com/waliilaw' , 
     description:
       'Launching in Jan2026',
