@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
     name: '********',
     github:'https://github.com/waliilaw' , 
     description:
-      '',
+      'Launching in Jan2026',
     link: 'https://waliilaw.me',
     image :
       '/k.png',
@@ -85,7 +85,7 @@ export const PROJECTS: Project[] = [
     name: '******** *******',
     github:'https://github.com/waliilaw' , 
     description:
-      '',
+      'Launching in Jan2026',
     link: 'https://waliilaw.me',
     image :
       '/c.png',
