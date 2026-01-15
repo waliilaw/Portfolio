@@ -731,6 +731,7 @@ export default function Personal() {
                           "inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset cursor-pointer",
                           project.tag === '$5000 Grant Recipient' && "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-green-600/20 dark:ring-green-500/30",
                            project.tag === '$3000 Grant Recipient' && "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-green-600/20 dark:ring-green-500/30",
+                            project.tag === '$4000 Grant Recipient' && "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-green-600/20 dark:ring-green-500/30",
                           project.tag === 'Building' && "bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 ring-blue-600/20 dark:ring-blue-500/30"
                         )}>
                           {project.tag}
