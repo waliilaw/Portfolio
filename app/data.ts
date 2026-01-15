@@ -75,11 +75,10 @@ export const PROJECTS: Project[] = [
     description:
       'Launching in Jan2026',
     link: 'https://waliilaw.me',
-    image :
-      '/k.png',
-    id: 'project1',
+    video : '/k.mp4',
+    id: 'project8',
     tag: '$3000 Grant Recipient',
-    type : 'image'
+    type : 'video'
   },
   {
     name: 'C-V0',
@@ -87,11 +86,10 @@ export const PROJECTS: Project[] = [
     description:
       'Launching in Jan2026',
     link: 'https://waliilaw.me',
-    image :
-      '/c.png',
+   video : '/c.mp4',
     id: 'project7',
     tag: '$4000 Grant Recipient',
-    type : 'image'
+    type : 'video'
   },
   //   {
   //   name: 'Re:mail',
