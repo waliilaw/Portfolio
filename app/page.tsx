@@ -706,6 +706,7 @@ export default function Personal() {
                     "relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50",
                     project.tag && project.tag === '$5000 Grant Recipient' && 'video-container-green',
                     project.tag && project.tag === '$3000 Grant Recipient' && 'video-container-green',
+                    project.tag && project.tag === '$4000 Grant Recipient' && 'video-container-green',
                     project.tag && project.tag === 'Building' && 'video-container-blue'
                   )}>
 {project.type === 'image' ? (
